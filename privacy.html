@@ -1,40 +1,69 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy · 隐私权政策 — ForChina</title>
+<title>Privacy Policy — ForChina Uploader</title>
 <style>
   body { font-family: "Segoe UI", "Microsoft YaHei", sans-serif; background: #14264c; color: #e7ecf5;
          margin: 0; padding: 40px 16px; }
-  .card { max-width: 680px; margin: 0 auto; background: rgba(255,255,255,.05); border-radius: 16px;
-          padding: 36px 32px; line-height: 1.8; font-size: 15px; }
-  h1 { font-size: 20px; } h2 { font-size: 16px; margin-top: 24px; color: #fff; }
+  .card { max-width: 720px; margin: 0 auto; background: rgba(255,255,255,.05); border-radius: 16px;
+          padding: 40px 36px; line-height: 1.8; font-size: 15px; }
+  h1 { font-size: 22px; color: #fff; } h2 { font-size: 16px; margin-top: 28px; color: #fff; }
   a { color: #9db4dd; }
 </style>
 </head>
 <body>
 <div class="card">
-  <h1>Privacy Policy · 隐私权政策</h1>
-  <p><em>Last updated: 2026-10-23</em></p>
+  <h1>Privacy Policy — ForChina Uploader</h1>
+  <p><em>Effective date: 2026-10-23 · Last updated: 2026-10-23</em></p>
 
-  <h2>EN</h2>
-  <p>This OAuth client is a private, personal-use tool. Its only function is to upload and manage
-     videos on the owner's own YouTube channel (ForChina, @forchina-j7m).</p>
-  <p>We do not collect, store, share or sell any user data. No analytics, no cookies, no third-party
-     tracking on this site. Google account access is requested only for the owner's own account and
-     is used solely for YouTube video upload and management via the official YouTube Data API.
-     Access can be revoked at any time in your
-     <a href="https://myaccount.google.com/permissions">Google account permissions</a>.</p>
+  <h2>1. Overview</h2>
+  <p>ForChina Uploader is a private, personal-use desktop application operated by the owner of the
+     YouTube channel <strong>ForChina</strong> (<a href="https://www.youtube.com/@forchina-j7m">@forchina-j7m</a>).
+     Its sole function is to upload and manage videos on that own channel using the official
+     <strong>YouTube Data API v3</strong>. The application is not distributed to, and not intended for,
+     any other user.</p>
 
-  <h2>中文</h2>
-  <p>本 OAuth 应用为私人自用工具，唯一功能是通过 YouTube 官方 Data API 向本频道（ForChina，
-     @forchina-j7m）上传及管理视频。</p>
-  <p>本站及该应用不收集、不存储、不共享、不出售任何用户数据；无统计、无 Cookie、无第三方追踪。
-     Google 账号授权仅面向所有者本人账号，仅用于视频上传与管理。你可随时在
-     <a href="https://myaccount.google.com/permissions">Google 账号权限页</a>撤销授权。</p>
+  <h2>2. Data we access and store</h2>
+  <ul>
+    <li><strong>Google account access:</strong> The application requests the OAuth scope
+        <code>youtube.upload</code> (plus basic channel identification) for the owner's own Google
+        account only.</li>
+    <li><strong>Credentials:</strong> The OAuth refresh token is stored locally on the owner's own
+        computer, in the application's working directory. It is transmitted only to Google's OAuth
+        servers. It is never sent to any other server, and we operate no backend of any kind.</li>
+    <li><strong>Content data:</strong> Video files, titles, descriptions and subtitles are supplied by
+        the owner and sent directly from the owner's computer to YouTube. No copy is kept by the
+        application beyond the original local files.</li>
+  </ul>
+  <p>We do <strong>not</strong> collect, use, share or sell any other user data. There is no analytics,
+     no advertising, no cookies and no third-party tracking in the application or on this website.</p>
 
-  <p><a href="index.html">← Back · 返回</a></p>
+  <h2>3. Data sharing</h2>
+  <p>No data is shared with, or sold to, any third party. The only external service involved is
+     Google's own YouTube API.</p>
+
+  <h2>4. Data retention and deletion</h2>
+  <p>OAuth credentials are retained only until the owner revokes access. Revocation is immediate and
+     can be done at any time on the
+     <a href="https://myaccount.google.com/permissions">Google account permissions page</a>
+     (remove "ForChina Uploader"), after which the locally stored token file is deleted. All uploaded
+     videos remain under the owner's exclusive control on YouTube and can be deleted there at any time.</p>
+
+  <h2>5. Google API Services User Data Policy</h2>
+  <p>This application's use of information received from Google APIs adheres to the
+     <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
+     User Data Policy</a>, including the Limited Use requirements. For information on how Google
+     handles user data, see <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>
+     and the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.</p>
+
+  <h2>6. Contact</h2>
+  <p>This is a single-operator personal project. For any question about this policy, contact the
+     operator via the GitHub repository hosting this page:
+     <a href="https://github.com/czycolor/czycolor.github.io">github.com/czycolor/czycolor.github.io</a>.</p>
+
+  <p><a href="index.html">← Back to app overview</a></p>
 </div>
 </body>
 </html>
